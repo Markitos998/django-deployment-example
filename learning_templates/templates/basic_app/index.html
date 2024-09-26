@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+
+{% block body_block %}
+
+    <h1>WELCOME TO INDEX</h1>
+    <h2>This is an example of template inheritance</h2>
+
+    <!--ADD UPPER FILTER-->
+    <h1>{{ text|upper }}</h1>
+
+<!--    SEE CUT FUNC ON basic_app/templatetags/my_extras.py-->
+    <h2>{{ text|cut:'hello' }}</h2>
+
+    <h1>{{ number|add:"99" }}</h1>
+
+
+{% endblock %}
